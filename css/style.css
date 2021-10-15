@@ -20,7 +20,7 @@ body{
 .instagram-wrapper {
 display: flex;
 align-items: center;
-justify-content: start;
+justify-content: space-evenly;
 width: 60%;
 height: 100vh;
 }
@@ -33,7 +33,7 @@ height: 100vh;
     }
 
     .instagram-phone img  {
-    height: 50rem;
+    height: 30rem;
     }
 
     .instagram-continue {
@@ -41,7 +41,7 @@ height: 100vh;
         align-items: center;  /* horizontal */
         justify-content: space-around;  /* vertical */
         flex-direction: column;
-        width: 50%;
+        width: 60%;
         min-height: 34rem;
     }
 
@@ -67,7 +67,9 @@ height: 100vh;
     .profile-photo {
         display: flex;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
+        background-color: white;
         border-radius: 50%;
         overflow: hidden;
     }
@@ -81,6 +83,7 @@ height: 100vh;
         color: #ffffff;
         padding: 8px;
         border-radius: 4px;
+        margin: 8px;
     }
 
     .instagram-logout {
@@ -101,8 +104,8 @@ height: 100vh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
-        padding: 1.3rem 0;
+        width:100%;
+        padding: 1rem 0;
     }
 
     .download {
@@ -117,15 +120,30 @@ height: 100vh;
         height: 3rem;
         width: 10rem;
         background-size: cover;
+        margin-bottom: 20px;
     }
 
-    .app-dowload:nth-child(1) {
-        background-image: url(./assets/apple-button.png);
+    .app-download:nth-child(1) {
+        background-image: url("./assets/apple-button.png");
+        width: 300px;
+        height: 100px;
+        max-height: 100%;
+        background-repeat: no-repeat;   
+
     }
 
-    .app-dowload:nth-child(2) {
-        background-image: url(./assets/googleplay-button.png);
+    .app-download:nth-child(2) {
+        background-image: url("./assets/googleplay-button.png");
+        width: 300px;
+        height: 100px;
+        min-height: 100%;
+        background-repeat: no-repeat;
+        
     }
+        
+
+        
+    
 
     /* media queries */
 
