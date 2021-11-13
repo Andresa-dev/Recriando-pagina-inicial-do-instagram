@@ -108,7 +108,7 @@ body {
 .download {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding: 1rem;
 }
@@ -121,10 +121,12 @@ body {
 
 .app-download:nth-child(1) {
     background-image: url('./apple-button.png');
+    margin-right: 10px;
 }
 
 .app-download:nth-child(2) {
     background-image: url('./assests/googleplay-button.png');
+    margin-left: 10px;
 }
 
 /* media queries */
